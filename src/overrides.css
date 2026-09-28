@@ -1,0 +1,71 @@
+.compare-product{position:absolute;z-index:2;right:9px;top:42px;border:0;border-radius:50%;width:27px;height:27px;background:#ffffffe5;color:#394b3e}.compare-product.is-selected{background:#526e4d;color:#fff}.compare-overlay{position:fixed;z-index:30;inset:0;background:#1c2c22a8;display:grid;place-items:center;padding:18px}.compare-dialog{position:relative;width:min(800px,100%);background:white;padding:25px}.compare-dialog h2{font:400 25px var(--serif)}.compare-close{position:absolute;right:16px;top:13px;border:0;background:none;font-size:24px}.compare-columns{display:grid;grid-template-columns:1fr 1fr;gap:15px}.compare-columns article{border:1px solid var(--line);padding:12px;display:grid;gap:7px}.compare-columns img{height:135px;width:100%}.compare-columns h3{font-size:14px;margin:3px 0}.compare-columns span,.compare-columns p{font-size:14px;color:#758075}.compare-columns b{font-size:14px}.compare-columns .shop-dark-button{width:max-content;font-size:14px}.mobile-menu{position:relative;z-index:7}.clinic-header,.eco-header,.shop-header{position:relative}.shop-header nav.nav-open,.clinic-header nav.nav-open,.eco-header nav.nav-open{display:none}
+@media(max-width:720px){.shop-header nav.nav-open,.clinic-header nav.nav-open,.eco-header nav.nav-open{display:flex;position:absolute;left:0;right:0;top:100%;height:auto;max-height:calc(100vh - 100px);overflow:auto;background:#fff;box-shadow:0 12px 20px #1b32251b;padding:13px 18px 17px;align-items:stretch;flex-direction:column;gap:0}.shop-header nav.nav-open a,.clinic-header nav.nav-open a,.eco-header nav.nav-open a{display:block;padding:12px 2px;border-bottom:1px solid #edf0eb;font-size:14px}.compare-dialog{padding:18px}.compare-columns img{height:95px}.compare-columns h3{font-size:14px}}
+
+/* Readability and a persistent path back to the prototype hub. */
+.hub-back-link{position:fixed;z-index:25;top:116px;left:16px;display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 15px;border:1px solid #d8e2d8;border-radius:999px;background:#fff;color:#294a37;box-shadow:0 4px 18px #17332220;font-size:14px;font-weight:700;letter-spacing:0}
+.hub-logo i{width:34px;height:34px;font:700 14px 'DM Sans',sans-serif;letter-spacing:-.3px}
+.hub-back-link:hover{background:#edf3ed;color:#173d28}
+.language-switch{--switch-green:#365341;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:5px;min-width:82px;height:34px;padding:3px;border:1px solid #d9e1d8;border-radius:999px;background:#f4f7f3;color:#627064;cursor:pointer}
+.language-switch .language-label{position:relative;z-index:1;width:25px;text-align:center;font:700 14px/1 'DM Sans','Noto Sans Thai',sans-serif;transition:color .2s}
+.language-switch .language-label.is-active{color:#fff}
+.switch-track{position:absolute;top:3px;left:3px;width:35px;height:26px;border-radius:999px;background:var(--switch-green);transition:transform .2s ease}
+.language-switch[aria-checked="true"] .switch-track{transform:translateX(39px)}
+.language-switch:focus-visible{outline:2px solid #4a88d0;outline-offset:2px}
+.shop-actions .language-switch{flex:none}
+.cart-link .basket-icon{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.shop-rail .basket-icon{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.cart-state-pill{display:flex;align-items:center;gap:5px;width:max-content;max-width:100%;margin:6px 0 2px;padding:5px 8px;border:1px solid #dbe8dc;border-radius:999px;background:#f1f7f0;color:#4c704f;font-size:14px;line-height:1.2}
+.cart-state-pill b{font-weight:700}
+.cart-state-pill i{font-style:normal;display:grid;place-items:center;width:15px;height:15px;border-radius:50%;background:#dcebd9;font-size:14px}
+.cart-state-spacer{height:31px;margin:6px 0 2px}
+.product-card .product-meta{display:flex;flex-direction:column}
+.product-card .add-cart-btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:43px;margin-top:auto;padding:7px 10px 7px 14px;border:0;border-radius:7px;background:#304d3b;color:#fff;font-size:14px;font-weight:600;transition:background .2s,transform .2s,box-shadow .2s}
+.product-card .add-cart-btn:hover{background:#203c2b;box-shadow:0 5px 14px #25483325;transform:translateY(-1px)}
+.product-card .add-cart-btn span{display:grid;place-items:center;width:29px;height:29px;border-radius:5px;background:#ffffff20;color:#fff;font-size:19px;line-height:1}
+.product-card .add-cart-btn.has-cart{background:#304d3b;color:#fff}
+.pale-blue-theme{--blue-soft:#eaf5fc;--blue-wash:#f4f9fd;--blue-line:#d5e7f4;--blue-accent:#5ba0d2;--blue-strong:#2878b5;--blue-deep:#1d527d}
+body:has(.hub-header),body:has(.clinic-header),body:has(.eco-header),body:has(.shop-header){--blue-soft:#eaf5fc;--blue-wash:#f4f9fd;--blue-line:#d5e7f4;--blue-accent:#5ba0d2;--blue-strong:#2878b5;--blue-deep:#1d527d}
+.hub-logo,.hub-kicker,.hub-button,.journey-row>b,.journey-row a,.kicker{color:var(--blue-strong)}
+.hub-logo i{background:var(--blue-deep)}
+.hub-hero,.journey-wrap,.featured-doctors,.clinic-journal,.trust-content,.eco-mission,.eco-featured,.eco-news,.shop-home-hero,.shop-benefits,.bestsellers,.shop-editorial,.newsletter-strip,.catalog-heading,.related-products,.order-summary,.checkout-summary{background:var(--blue-wash)}
+.journey-head,.site-footer,.shop-dark-button,.eco-cta,.eco-submit,.program-strip,.catalog-pills button.selected,.clinic-book,.product-card .add-cart-btn{background:var(--blue-deep);color:#fff}
+.journey-head{background:#4f94c4}
+.shop-dark-button:hover,.eco-submit:hover,.clinic-book:hover,.product-card .add-cart-btn:hover{background:#17496f;color:white}
+.eco-logo,.eco-inner-hero .kicker,.eco-portfolio-row .kicker,.eco-value-grid .kicker,.eco-contact-layout .kicker,.eco-story-grid .kicker,.shop-logo,.shop-editorial a,.catalog-category.selected,.clear-filters,.cart-title>a,.order-success b{color:var(--blue-strong)}
+.eco-logo i,.shop-logo>i{background:var(--blue-deep);color:#fff}
+.eco-cta,.eco-submit,.newsletter-strip button{background:var(--blue-deep);color:#fff}
+.trust-band,.sustainability-panel,.eco-portfolio-row,.store-search,.partner-content,.eco-contact-layout,.catalog-sidebar,.product-option,.detail-accordions,.cart-row,.checkout-form{border-color:var(--blue-line)}
+.program-strip .kicker,.program-more,.clinic-quick>a,.clinic-logo,.clinic-logo i,.quick-emblem{color:var(--blue-strong)}
+.center-card,.shop-categories>a,.product-image,.gallery-main,.gallery-thumbs img{background:#e4f1f9}
+.product-badge,.cart-state-pill{background:#e7f3fb;color:#286c9e;border-color:#d0e5f3}
+.favorite-btn.is-favorite{color:#3f8dc3}
+.catalog-category.selected{color:var(--blue-strong)}
+.catalog-pills button{border-color:var(--blue-line);color:#426985}
+.shop-promo,.catalog-heading,.checkout-layout,.cart-page{border-color:var(--blue-line)}
+.shop-editorial,.newsletter-strip{background:#e5f2fa}
+.eco-matrix-grid>a,.eco-value-grid>article,.trust-badges>div,.clinic-trust-card{border-color:#d5e7f4}
+.stock-line{color:#2878a9}
+.stock-line i,.switch-track{background:#4c91c1}
+.language-switch{border-color:var(--blue-line);background:#f4f9fd}
+.language-switch .language-label{color:#58788e}
+.site-footer{background:#173b59;color:#eaf6fd}
+.site-footer small{color:#bad7e9}
+.toast{z-index:80!important;left:auto!important;right:24px;bottom:24px!important;transform:translateY(18px)!important;display:flex;align-items:center;gap:12px;min-width:250px;max-width:min(420px,calc(100vw - 28px));padding:14px 18px!important;border:1px solid #dce8d8;background:#fff!important;color:#2e4634!important;border-radius:16px;box-shadow:0 14px 38px #18332224;font-size:14px!important;opacity:0;transition:opacity .26s ease,transform .3s cubic-bezier(.2,.8,.2,1)!important;overflow:hidden}
+.toast.show{opacity:1;transform:translateY(0)!important}
+.toast-icon{flex:none;display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#e8f2e6;color:#4b7b4b;font-size:15px}
+.toast-favorite .toast-icon{background:#faecee;color:#c45b69}
+.toast-copy{font-size:14px;line-height:1.45;font-weight:600}
+.toast-progress{position:absolute;left:0;bottom:0;height:3px;width:100%;background:#78a36e;transform-origin:left;animation:toast-countdown 3.1s linear forwards}
+.toast-favorite .toast-progress{background:#c45b69}
+@keyframes toast-countdown{to{transform:scaleX(0)}}
+body{font-size:16px}
+html,body{min-height:100%}
+body #app{min-height:100vh;display:flex;flex-direction:column}
+#app>main{flex:1 0 auto}
+.kicker,.light-kicker,.hub-kicker,.hub-header,.hub-logo span,.prototype-count,.hero-photo-caption,.journey-head,.journey-row,.site-footer,.site-footer small,.top-inner,.clinic-header nav a,.eco-header nav a,.shop-header nav a,.clinic-book,.eco-cta,.locale-btn,.search-toggle,.shop-promo,.clinic-top,.header-right,.clinic-quick,.primary-button,.shop-dark-button,.eco-white-button,.eco-submit,.outline-link,.section-lead p,.hub-hero p,.hub-button,.showcase-intro p,.prototype-info p,.journey-heading>p,.appointment-form label,.contact-card,.doctor-card p,.package-card p,.article-tile p,.store-result p,.product-meta>small,.product-meta h3,.product-rating,.product-price,.add-cart-btn,.catalog-heading>p,.catalog-crumb,.catalog-search input,.catalog-sidebar h3,.catalog-category,.brand-filter,.price-range,.clear-filters,.catalog-toolbar,.catalog-pills button,.catalog-toolbar label,.product-detail-copy p,.product-option,.product-promises,.detail-accordions summary,.detail-accordions p,.cart-row,.order-summary,.secure-note,.checkout-form,.checkout-summary,.newsletter-strip p,.newsletter-strip input,.newsletter-strip button,.toast{font-size:max(12px,1em)}
+.hub-header>div,.hub-kicker,.prototype-count,.hero-photo-caption,.journey-head,.site-footer small,.top-inner,.clinic-header nav a,.eco-header nav a,.shop-header nav a,.clinic-book,.eco-cta,.locale-btn,.shop-promo,.clinic-top,.kicker,.light-kicker{font-size:max(12px,1em)}
+.hub-back-link{font-size:14px}
+.journey-row,.section-lead p,.hub-hero p,.showcase-intro p,.prototype-info p,.journey-heading>p,.clinic-quick,.appointment-form label,.contact-card,.doctor-card p,.package-card p,.article-tile p,.store-result p,.product-detail-copy p,.detail-accordions p,.newsletter-strip p{font-size:max(14px,1em)}
+.product-meta h3,.cart-row h2,.catalog-sidebar h3,.catalog-category,.brand-filter,.catalog-toolbar,.catalog-pills button,.checkout-form,.checkout-summary{font-size:max(13px,1em)}
+@media(max-width:720px){.hub-back-link{top:74px;left:9px;min-height:38px;padding:0 12px;font-size:14px}.top-inner,.clinic-header nav a,.eco-header nav a,.shop-header nav a{font-size:14px}.journey-head,.journey-row{font-size:14px}.hub-hero p,.section-lead p,.prototype-info p,.journey-heading>p,.clinic-quick,.contact-card,.doctor-card p,.package-card p,.article-tile p,.store-result p,.product-detail-copy p,.newsletter-strip p{font-size:14px}.product-meta h3,.add-cart-btn,.catalog-category,.catalog-pills button{font-size:14px}.language-switch{min-width:76px;height:32px}.switch-track{width:33px;height:24px}.language-switch[aria-checked="true"] .switch-track{transform:translateX(35px)}.toast{right:12px;bottom:56px!important;min-width:0;padding:12px 15px!important}.toast-copy{font-size:14px}}
+

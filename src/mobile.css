@@ -1,0 +1,42 @@
+/* Mobile layout and touch target refinements. */
+@media(max-width:720px){
+ #app .clinic-header,#app .eco-header,#app .shop-header{height:auto;min-height:112px;display:flex;flex-direction:column;align-items:stretch;justify-content:center;padding:12px;gap:10px}
+ #app .clinic-logo,#app .eco-logo,#app .shop-logo{align-self:flex-start;flex:none}
+ #app .header-right,#app .clinic-header .header-right,#app .shop-actions{display:flex;width:100%;align-items:center;justify-content:space-between;gap:4px;min-width:0}
+ #app .clinic-book{white-space:nowrap;flex:1;text-align:center;min-height:44px;display:flex;align-items:center;justify-content:center;padding:8px;font-size:14px}
+ #app .language-switch{height:44px;min-height:44px;flex:none}
+ #app .language-switch .switch-track{top:6px}
+ #app .language-switch .language-label{line-height:36px}
+ #app .mobile-menu,#app .shop-header .mobile-menu,#app .clinic-header .mobile-menu,#app .search-toggle,#app .cart-link{width:44px;height:44px;min-width:44px;min-height:44px;padding:8px;display:flex;align-items:center;justify-content:center;flex:none;box-sizing:border-box;font-size:22px}
+ #app .cart-link span{right:2px;top:1px;min-width:18px;height:18px;font-size:12px;padding:2px;line-height:1}
+ #app .cart-link span{background:#438fc5}
+ #app .eco-cover-copy h1{white-space:normal;text-wrap:balance}
+ #app .order-receipt>div{gap:12px;align-items:flex-start}
+ #app .order-receipt>div>span{min-width:0;flex:1;overflow-wrap:anywhere}
+ #app .order-receipt>div>strong{flex:none;font-size:20px;line-height:1.5}
+ #app .shop-promo{height:auto;min-height:44px;padding:8px 12px;flex-wrap:wrap;line-height:1.6;text-align:center;font-size:13px}
+ #app .shop-header nav.nav-open,#app .clinic-header nav.nav-open,#app .eco-header nav.nav-open{max-height:calc(100dvh - 160px)}
+ #app .shop-site .product-card>.favorite-btn,#app .shop-site .product-card>.compare-product{width:44px;height:44px;min-width:44px;min-height:44px;font-size:20px;right:5px;border:1px solid #dceaf5}
+ #app .shop-site .product-card>.favorite-btn{top:6px}
+ #app .shop-site .product-card>.compare-product{top:56px}
+ #app .product-badge{max-width:calc(100% - 60px);font-size:12px;line-height:1.5;white-space:normal}
+ #app .quantity-control button{width:44px;min-width:44px;height:44px;min-height:44px;font-size:20px}
+ #app .product-detail-copy .detail-buy{flex-wrap:wrap;gap:12px}
+ #app .product-detail-copy .detail-buy>.quantity-control{flex:none}
+ #app .product-detail-copy .detail-buy>.shop-dark-button{order:3;flex:1 0 100%;width:100%;min-height:48px}
+ #app .product-detail-copy .detail-buy>.favorite-btn{margin-left:auto}
+ #app .toast{bottom:calc(88px + env(safe-area-inset-bottom))!important;left:12px;right:12px;max-width:none}
+ #app .journey-table{overflow:visible;display:grid;gap:14px;border:0;min-width:0}
+ #app .journey-head{display:none}
+ #app .journey-row{display:grid;grid-template-columns:minmax(0,1fr);min-width:0;gap:14px;padding:22px;background:#fff;border:1px solid #dceaf5;border-radius:14px}
+ #app .journey-row>b{font-size:19px;line-height:1.5}
+ #app .journey-row>span{font-size:16px;line-height:1.75;overflow-wrap:anywhere}
+ #app .journey-row>span::before{display:block;margin-bottom:4px;color:#648199;font-size:12px;font-weight:600;letter-spacing:.5px}
+ #app .journey-row>span:nth-child(2)::before{content:'พฤติกรรมผู้ใช้'}
+ #app .journey-row>span:nth-child(3)::before{content:'TOUCHPOINT / FEATURE'}
+ #app .journey-row>span:nth-child(4)::before{content:'เป้าหมายของระบบ'}
+ html[lang='en'] #app .journey-row>span:nth-child(2)::before{content:'CUSTOMER NEED'}
+ html[lang='en'] #app .journey-row>span:nth-child(4)::before{content:'SYSTEM GOAL'}
+ #app .journey-row a{display:inline-flex;min-width:44px;min-height:44px;align-items:center;justify-content:center;background:#edf7fd;border-radius:8px;margin-left:8px}
+ #app .simple-form input,#app .simple-form select,#app .simple-form textarea,#app .checkout-form input,#app .catalog-search input,#app .store-search input{font-size:16px}
+}
