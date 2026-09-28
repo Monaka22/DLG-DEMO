@@ -15,7 +15,7 @@
 #app .page-heading h1,#app .catalog-heading h1{line-height:1.25;margin:12px 0 16px}
 #app .page-heading p,#app .catalog-heading p{color:#577083;max-width:720px;margin-inline:auto}
 #app .page-banner,#app .detail-hero,#app .eco-inner-hero{height:auto;min-height:320px}
-#app .page-banner>div,#app .detail-hero>div,#app .eco-inner-hero>div{position:relative;left:auto;top:auto;transform:none;max-width:none;padding:64px 8%;width:100%}
+#app .page-banner>div,#app .detail-hero>div,#app .eco-inner-hero>div{position:relative;left:auto;right:auto;top:auto;transform:none;max-width:none;padding:64px 8%;width:100%}
 #app .page-banner h1,#app .detail-hero h1,#app .eco-inner-hero h1{max-width:760px}
 #app .page-banner p,#app .detail-hero p,#app .eco-inner-hero p{max-width:640px;color:#f2f8fd}
 #app .light-kicker,#app .detail-hero .kicker,#app .program-strip .kicker{color:#d7edfd}
@@ -153,7 +153,7 @@
  #app .page-utility>span{display:none}
  #app .page-heading,#app .catalog-heading{padding:34px 6%}
  #app .page-heading h1,#app .catalog-heading h1{font-size:30px}
- #app .page-banner>div,#app .detail-hero>div,#app .eco-inner-hero>div{padding:44px 6%}
+ #app .page-banner>div,#app .detail-hero>div,#app .eco-inner-hero>div{left:auto;right:auto;padding:44px 22px}
  #app .detail-hero h1,#app .eco-inner-hero h1{font-size:32px;line-height:1.35}
  #app .doctor-profile{display:grid;grid-template-columns:1fr;width:88%;margin:28px auto;gap:24px}
  #app .doctor-profile>img{height:300px;width:100%;object-fit:cover}
@@ -227,8 +227,8 @@
  #app .clinic-hero-content>p{max-width:100%;line-height:1.8}
  #app .eco-cover-copy,#app .eco-partner-cta>div{left:22px;right:22px;max-width:calc(100% - 44px)}
  #app .eco-cover-copy h1,#app .eco-partner-cta h2{font-size:clamp(27px,7.2vw,36px);line-height:1.4;text-wrap:balance}
- #app .eco-partner-cta{height:auto;min-height:380px;padding:42px 0}
- #app .eco-partner-cta>div{position:relative;top:auto;left:auto;right:auto;width:auto;max-width:none;margin:0 22px;padding:0}
+ #app .eco-partner-cta{height:auto;min-height:380px;padding:0}
+ #app .eco-partner-cta>div{position:absolute;top:50%;left:22px;right:22px;width:auto;max-width:none;margin:0;padding:0;transform:translateY(-50%)}
  #app .eco-partner-cta p{line-height:1.8}
  #app .eco-partner-cta .eco-white-button{max-width:100%;white-space:normal;line-height:1.5;padding:13px 16px}
  #app .newsletter-strip{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;padding:32px 22px 36px}
