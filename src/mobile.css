@@ -37,6 +37,5 @@
  #app .journey-row>span:nth-child(4)::before{content:'เป้าหมายของระบบ'}
  html[lang='en'] #app .journey-row>span:nth-child(2)::before{content:'CUSTOMER NEED'}
  html[lang='en'] #app .journey-row>span:nth-child(4)::before{content:'SYSTEM GOAL'}
- #app .journey-row a{display:inline-flex;min-width:44px;min-height:44px;align-items:center;justify-content:center;background:#edf7fd;border-radius:8px;margin-left:8px}
  #app .simple-form input,#app .simple-form select,#app .simple-form textarea,#app .checkout-form input,#app .catalog-search input,#app .store-search input{font-size:16px}
 }
