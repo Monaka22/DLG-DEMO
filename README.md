@@ -1,7 +1,18 @@
 # Digital Light Group Demo Website
 
-A Vite-powered sales demo with three independent wellness website concepts, presented through one collection hub.
+A Vite-powered sales demo with three independent wellness website concepts, available as three direct, independently deployable websites.
 
+## Independent websites
+
+The three websites have separate entry URLs and open directly without a collection hub:
+
+- Hospital / clinic: `/clinic.html`
+- Wellness ecosystem: `/ecosystem.html`
+- Product e-commerce: `/shop.html`
+
+The regular build produces all three entry pages in `dist/`. For independent deployments, run `npm run build:clinic`, `npm run build:ecosystem`, or `npm run build:shop`; each produces a standalone site in `dist-sites/<name>/`. Each website has its own navigation and content. The shop includes a demo cart, checkout and bank transfer instructions.
+
+Firebase Hosting is configured for site IDs dlg-demo, dlg-demo-ecosystem, and dlg-demo-shop. After building all three folders and signing in with irebase login, deploy them together with irebase deploy --only hosting --project dlg-demo.
 ## Run locally
 
 ```sh

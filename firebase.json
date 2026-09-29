@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "site": "dlg-demo",
+      "public": "dist-sites/clinic",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    },
+    {
+      "site": "dlg-demo-ecosystem",
+      "public": "dist-sites/ecosystem",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    },
+    {
+      "site": "dlg-demo-shop",
+      "public": "dist-sites/shop",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+  ]
+}

@@ -273,3 +273,65 @@
 .prototype-info .prototype-purpose{font-size:16px;line-height:1.6;margin:10px 0 20px}.prototype-sales{border-top:1px solid #d7e7f2;padding-top:18px}.prototype-sales small{color:#34729f;font-weight:700;letter-spacing:.06em;font-size:14px}.prototype-sales p{font-size:16px;line-height:1.7;margin:8px 0 14px}.prototype-sales ul{padding:0;list-style:none;margin:0 0 22px;display:grid;gap:8px}.prototype-sales li{font-size:14px;line-height:1.6;color:#365970}.prototype-info .prototype-open{position:static;display:inline-flex;align-items:center;gap:10px;width:auto;height:auto;font-size:16px;font-weight:700;color:#236c9b}.prototype-info{height:auto}.missing-page{padding:90px 6%;max-width:820px;margin:auto;min-height:60vh;display:flex;flex-direction:column;align-items:center;gap:16px}.missing-page h1{font-size:clamp(28px,5vw,42px);margin:0}.missing-page p{font-size:16px;line-height:1.8;margin:0 0 12px}
 
 .prototype-grid{align-items:stretch}.prototype-card{height:auto;display:flex;flex-direction:column;border:1px solid #d9e8f3;border-radius:18px;background:#fff;color:#21475f;box-shadow:0 8px 24px #2965930a}.prototype-card:after{display:none}.prototype-card>img{height:200px;flex:none;object-fit:cover}.prototype-info{position:static;padding:24px;display:flex;flex-direction:column;flex:1}.prototype-info h3{font-size:24px;line-height:1.5;color:#21475f}.prototype-info p{color:#526c7e}.prototype-sales{flex:1}.prototype-info .prototype-open{align-self:flex-start;padding:10px 14px;background:#edf7ff;border:1px solid #d6e8f5;border-radius:8px}.prototype-count{background:#174c73cc;border-radius:6px;padding:6px 9px;font-size:14px;letter-spacing:.08em}@media(max-width:640px){.prototype-info{padding:20px}.prototype-card>img{height:190px}}
+@media(max-width:900px){#app .doctor-directory{grid-template-columns:repeat(2,minmax(0,1fr))}#app .doctor-directory .doctor-card{min-width:0}}
+@media(max-width:720px){#app .doctor-directory{grid-template-columns:minmax(0,1fr)}}
+/* Keep the narrow Checkout opt-ins inline; the base form labels use column flow. */
+#app .checkout-form .checkout-optin{display:flex;flex-direction:row;align-items:flex-start;justify-content:flex-start;gap:10px;width:100%;text-align:left}
+#app .checkout-form .checkout-optin input[type="checkbox"]{width:18px;height:18px;flex:0 0 18px;margin:3px 0 0}
+/* Give the clinic program rail a second row for its final link before the grid gets cramped. */
+@media(max-width:1700px){#app .program-strip{grid-template-columns:minmax(0,.8fr) minmax(0,1.9fr)}#app .program-strip>*{min-width:0}#app .program-pills{grid-template-columns:repeat(3,minmax(0,1fr));min-width:0}#app .program-pills>a{min-width:0}#app .program-more{grid-column:2;justify-self:end;white-space:normal;text-align:right}}
+@media(max-width:1100px){#app .program-strip{grid-template-columns:minmax(0,1fr)}#app .program-pills{grid-template-columns:repeat(3,minmax(0,1fr))}#app .program-more{grid-column:1;justify-self:start;text-align:left}}
+@media(max-width:720px){#app .program-pills{grid-template-columns:minmax(0,1fr)}}
+/* One stable form layout for clinic search and package filters. */
+#app .clinic-filter-heading{padding:44px 24px 40px}
+#app .clinic-filter-heading h1{font-size:clamp(26px,3.2vw,36px);line-height:1.4;text-wrap:balance}
+#app .clinic-filter-heading>p{margin-bottom:0;line-height:1.7}
+#app .clinic-filter-form{display:grid;gap:16px;width:min(100%,880px);margin:28px auto 0;align-items:end;text-align:left}
+#app .doctor-search.clinic-filter-form{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 132px}
+#app .package-controls.clinic-filter-form{grid-template-columns:repeat(2,minmax(0,1fr));max-width:720px}
+#app .clinic-filter-field{display:grid;gap:8px;min-width:0;align-self:stretch;color:#31566f;font-size:14px;font-weight:500}
+#app .clinic-filter-form input,#app .clinic-filter-form select,#app .clinic-filter-form button{box-sizing:border-box;width:100%;min-width:0;height:48px;min-height:48px;margin:0;border-radius:8px;font:400 16px/1.5 'DM Sans','Noto Sans Thai',sans-serif}
+#app .clinic-filter-form input,#app .clinic-filter-form select{padding:0 14px;border:1px solid #bfd9ec;background:#fff;color:#23475f;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#app .clinic-filter-form input::placeholder{color:#718b9e;opacity:1}
+#app .clinic-filter-form input:hover,#app .clinic-filter-form select:hover{border-color:#75a8cb}
+#app .clinic-filter-form input:focus,#app .clinic-filter-form select:focus{border-color:transparent;outline:none;outline-offset:0;box-shadow:none}
+#app input:focus,#app input:focus-visible,#app select:focus,#app select:focus-visible,#app textarea:focus,#app textarea:focus-visible{border-color:transparent;outline:none;outline-offset:0;box-shadow:none}
+#app .clinic-filter-form button{display:flex;align-items:center;justify-content:center;gap:8px;padding:0 18px;border:1px solid #0757a6;background:#0757a6;color:#fff;font-weight:600;align-self:end;white-space:nowrap}
+#app .clinic-filter-form button:hover{background:#064680;border-color:#064680}
+#app .clinic-filter-form button svg{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#app .clinic-filter-note{font-size:13px;margin:12px auto 0;max-width:720px;color:#6a8193}
+#app .clinic-result-count{margin:0 0 18px;color:#587083;font-size:14px;line-height:1.6}
+@media(max-width:640px){
+  #app .clinic-filter-heading{padding:32px 20px}
+  #app .clinic-filter-heading h1{margin:10px 0 12px;font-size:27px;line-height:1.45}
+  #app .clinic-filter-heading>.kicker{font-size:12px;letter-spacing:1.3px}
+  #app .doctor-search.clinic-filter-form,#app .package-controls.clinic-filter-form{grid-template-columns:minmax(0,1fr);gap:16px;margin-top:24px}
+  #app .clinic-filter-form input,#app .clinic-filter-form select,#app .clinic-filter-form button{height:48px;min-height:48px}
+  #app .clinic-filter-heading .clinic-filter-note{text-align:left;line-height:1.6}
+}
+/* Remove the visible frame from all text-entry controls, including their focused state. */
+#app input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="submit"]):not([type="button"]):not([type="reset"]),#app select,#app textarea{border:0!important;outline:none!important;box-shadow:none!important}
+#app .clinic-menu-book{display:none}
+@media(max-width:720px){
+  #app .clinic-header .header-right>.clinic-book{display:none}
+  #app .clinic-header nav.nav-open .clinic-menu-book{display:flex;align-items:center;justify-content:center;min-height:48px;margin-top:12px;padding:12px 16px;border:0;border-radius:8px;background:var(--blue-deep);color:#fff;font-size:16px;font-weight:600;text-align:center}
+  #app .clinic-header nav.nav-open .clinic-menu-book:hover{background:#17496f;color:#fff}
+  #app .clinic-header,#app .eco-header,#app .shop-header{position:sticky;top:0;z-index:50}
+  #app .page-utility{position:relative;top:auto}
+}
+/* Show package comparisons as readable cards on phones instead of a clipped, sideways table. */
+@media(max-width:720px){
+  #app .clinic-compare-table-wrap{overflow:visible;border:0;background:transparent}
+  #app .clinic-compare-table{display:block;width:100%;min-width:0;border-collapse:separate;border-spacing:0}
+  #app .clinic-compare-table thead{display:none}
+  #app .clinic-compare-table tbody{display:grid;gap:12px}
+  #app .clinic-compare-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;padding:16px;border:1px solid #dce7ee;background:#fff;min-width:0}
+  #app .clinic-compare-table tbody th{grid-column:1/-1;min-width:0;padding:0 0 10px;border-bottom:1px solid #e5edf2;font-size:16px;line-height:1.5}
+  #app .clinic-compare-table tbody td{display:block;min-width:0;padding:0;border:0;font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+  #app .clinic-compare-table tbody td::before{content:attr(data-label);display:block;margin-bottom:3px;color:#71818b;font-size:12px;font-weight:600}
+  #app .clinic-compare-table tbody td:nth-of-type(4),#app .clinic-compare-table tbody td:nth-of-type(5){grid-column:1/-1}
+  #app .clinic-compare-table ul{min-width:0;padding-left:18px}
+  #app .clinic-compare-table td strong{white-space:normal}
+  #app .clinic-compare-table .compare-book{display:inline-flex;margin-top:2px}
+  #app .clinic-compare-table-wrap+.prototype-note{overflow-wrap:anywhere;line-height:1.7}
+}
